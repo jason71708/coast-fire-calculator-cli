@@ -1,6 +1,6 @@
 {
   "name": "coast-fire-calculator-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interactive CLI to estimate your Coast FIRE age—enter your savings, investments, and goals to see when you can stop contributing and still reach financial independence.",
   "main": "index.js",
   "type": "module",
