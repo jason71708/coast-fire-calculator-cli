@@ -1,16 +1,31 @@
 {
   "name": "coast-fire-calculator-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "Interactive CLI to estimate your Coast FIRE age—enter your savings, investments, and goals to see when you can stop contributing and still reach financial independence.",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "start": "node index.js",
+    "commit": "git-cz"
   },
-  "keywords": [],
+  "keywords": [
+    "fire",
+    "financial-independence",
+    "retirement",
+    "calculator",
+    "cli"
+  ],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "dependencies": {
     "chalk": "^5.4.1",
     "chalk-animation": "^2.0.3",
@@ -18,5 +33,10 @@
     "gradient-string": "^3.0.0",
     "inquirer": "^12.6.3",
     "nanospinner": "^1.2.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0"
   }
 }

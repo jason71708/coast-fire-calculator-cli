@@ -1,0 +1,9 @@
+{
+  "path": "cz-conventional-changelog",
+  "message": "feat: add Coast FIRE calculator CLI",
+  "type": "feat",
+  "scope": "",
+  "subject": "add Coast FIRE calculator CLI",
+  "body": "",
+  "footer": ""
+}

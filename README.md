@@ -39,6 +39,53 @@ node index.js
 
 ---
 
+## 🧪 Testing
+
+Run the test suite:
+```bash
+pnpm test
+```
+
+Run tests in watch mode:
+```bash
+pnpm test:watch
+```
+
+Run tests with coverage:
+```bash
+pnpm test:coverage
+```
+
+---
+
+## 📝 Committing Changes
+
+This project uses [Commitizen](https://github.com/commitizen/cz-cli) for standardized commit messages. To commit your changes:
+
+```bash
+pnpm commit
+```
+
+This will guide you through creating a conventional commit message with the following format:
+```
+type(scope): subject
+
+body
+
+footer
+```
+
+### Commit Types:
+- `feat`: New features
+- `fix`: Bug fixes
+- `docs`: Documentation changes
+- `style`: Code style changes (formatting, etc.)
+- `refactor`: Code refactoring
+- `test`: Adding or updating tests
+- `chore`: Maintenance tasks
+
+---
+
 ## 💡 Example
 
 ```
