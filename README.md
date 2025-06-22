@@ -86,6 +86,70 @@ footer
 
 ---
 
+## 🚀 Release Management
+
+This project includes a comprehensive release system inspired by popular open-source libraries.
+
+### Quick Release Commands:
+
+```bash
+# Patch release (1.0.0 → 1.0.1) - Bug fixes
+pnpm release:patch
+
+# Minor release (1.0.0 → 1.1.0) - New features
+pnpm release:minor
+
+# Major release (1.0.0 → 2.0.0) - Breaking changes
+pnpm release:major
+
+# Pre-release versions
+pnpm release:prepatch  # 1.0.0 → 1.0.1-0
+pnpm release:preminor  # 1.0.0 → 1.1.0-0
+pnpm release:premajor  # 1.0.0 → 2.0.0-0
+
+# Interactive release (asks for type)
+pnpm release
+```
+
+### What the Release Script Does:
+
+1. **📋 Validation** - Checks git status and validates release type
+2. **📝 Version Bump** - Updates `package.json` version
+3. **📚 Changelog** - Generates/updates `CHANGELOG.md`
+4. **🏷️ Git Tag** - Creates version tag (e.g., `v1.0.1`)
+5. **📤 Commit** - Commits all changes with proper message
+6. **🚀 Publish** - Optionally publishes to npm
+
+### Release Workflow:
+
+```bash
+# 1. Make your changes
+git add .
+pnpm commit
+
+# 2. Run tests
+pnpm test
+
+# 3. Release (choose appropriate type)
+pnpm release:patch  # or minor/major
+
+# 4. The script will:
+#    - Bump version
+#    - Update changelog
+#    - Create git tag
+#    - Ask if you want to publish to npm
+```
+
+### Industry Best Practices:
+
+- **Semantic Versioning**: Follows `MAJOR.MINOR.PATCH` format
+- **Conventional Commits**: Uses standardized commit messages
+- **Keep a Changelog**: Maintains detailed change history
+- **Git Tags**: Creates version tags for easy reference
+- **Pre-releases**: Supports alpha/beta/rc versions
+
+---
+
 ## 💡 Example
 
 ```
